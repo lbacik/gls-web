@@ -1,0 +1,140 @@
+const data = {
+    showPathPoints: true,
+    worms: [
+        {
+            path: [
+                [50, 50],
+                [100, 50],
+                [100, 10],
+                [150, 10],
+                [150, 50],
+                [200, 50],
+                [200, 100],
+                [50, 100],
+            ],
+            head: [180, 100],
+            drawHead: false,
+            length: 200,
+            direction: false,
+            step: 4,
+            color: "lightskyblue",
+            width: 40,
+        },
+        {
+            path: [
+                [50, 50],
+                [100, 50],
+                [100, 10],
+                [150, 10],
+                [150, 50],
+                [200, 50],
+                [200, 100],
+                [50, 100],
+            ],
+            head: [180, 100],
+            drawHead: false,
+            length: 100,
+            direction: true,
+            step: 2,
+            color: "lightskyblue",
+            width: 40,
+
+        },
+        {
+            path: [
+                [100, 50],
+                [100, 10],
+                [150, 10],
+                [150, 50],
+            ],
+            head: [100, 10],
+            drawHead: false,
+            length: 100,
+            direction: true,
+            step: 2,
+            color: "lightskyblue",
+            width: 2,
+
+        },
+        {
+            path: [
+                [100, 50],
+                [100, 10],
+                [150, 10],
+                [150, 50],
+            ],
+            head: [100, 10],
+            drawHead: false,
+            length: 45,
+            direction: false,
+            step: 1,
+            color: "lightskyblue",
+            width: 2,
+
+        },
+        {
+            path: [
+                [50, 50],
+                [100, 50],
+                [100, 100],
+                [50, 100],
+            ],
+            head: [50, 50],
+            drawHead: false,
+            length: 45,
+            direction: true,
+            step: 2,
+            color: "lightskyblue",
+            width: 2,
+
+        },
+        {
+            path: [
+                [50, 50],
+                [100, 50],
+                [100, 100],
+                [50, 100],
+            ],
+            head: [50, 50],
+            drawHead: false,
+            length: 50,
+            direction: false,
+            step: 1,
+            color: "lightskyblue",
+            width: 2,
+
+        },
+        {
+            path: [
+                [150, 50],
+                [200, 50],
+                [200, 100],
+                [150, 100],
+            ],
+            head: [150, 50],
+            drawHead: false,
+            length: 40,
+            direction: true,
+            step: 1,
+            color: "lightskyblue",
+            width: 2,
+
+        },
+        {
+            path: [
+                [150, 50],
+                [200, 50],
+                [200, 100],
+                [150, 100],
+            ],
+            head: [150, 100],
+            drawHead: false,
+            length: 60,
+            direction: false,
+            step: 2,
+            color: "lightskyblue",
+            width: 2,
+
+        },
+    ]
+}
