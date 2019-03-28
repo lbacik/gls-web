@@ -1,4 +1,4 @@
-FROM node
+FROM node:11-alpine
 
 RUN mkdir /project
 COPY . /project

@@ -2,22 +2,23 @@
   "name": "gls-web",
   "version": "0.0.1",
   "author": "Łukasz Bacik <mail@luka.sh> (http://luka.sh)",
-  "description": "",
+  "license": "LGPL-2.1-or-later",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "node_modules/.bin/nodemon app.js"
-  },
-  "license": "ISC",
   "dependencies": {
+    "@lbacik/gls": "0.0.7",
+    "@lbacik/gls-api-client": "0.0.1",
     "express": "^4.16.4",
-    "pug": "^2.0.3",
-    "@lbacik/gls": "^0.0.1"
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "nodemon": "^1.18.9"
+  },
+  "files": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "node_modules/.bin/nodemon app.js"
   }
 }

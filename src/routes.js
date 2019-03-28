@@ -1,23 +1,35 @@
 
-const Generator = require('@lbacik/gls/src/generator/generator')
+module.exports = (app, glsWeb) => {
 
-module.exports = function(app, gls) {
+    const LOCAL_URI = '/lo'
+    const DB_URI = '/db'
 
-    const bodyParser = require('body-parser')
-    const jsonParser = bodyParser.json()
-
-    app.get('/canvas', (req, res) => {
-        res.render('canvas', {
-            canvas_id: "canvas01",
-            code: Generator.code()
-        })
-        res.end()
+    app.get('/', (req, res) => {
+        res.status(301).redirect(`${LOCAL_URI}`)
     })
 
     app.get('/code-generator', (req, res) => {
         res.render('data', {
-            data: Generator.code()
+            data: glsWeb.code()
         })
         res.end()
+    })
+
+    app.get(`${LOCAL_URI}/:name?`, (req, res) => {
+        const data = glsWeb.local(req.params.name)
+        data.uri = LOCAL_URI
+        res.render('canvas', data)
+        res.end()
+    })
+
+    app.get(`${DB_URI}/:name?`, (req, res) => {
+
+        glsWeb
+            .db(req.params.name)
+            .then(data => {
+                data.uri = DB_URI
+                res.render('canvas', data)
+                res.end()
+            })
     })
 }
