@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@now/node-server"
+    },
+    {
+      "src": "**/*.css",
+      "use": "@now/static"
+    },
+    {
+      "src": "**/*.pug",
+      "use": "@now/static"
+    },
+    {
+      "src": "**/*.json",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
+  ]
+}
