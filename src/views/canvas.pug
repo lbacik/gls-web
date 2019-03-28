@@ -3,9 +3,34 @@ head
     style
         include ../public/style.css
     body
-        canvas(id=canvas_id)
+
+        mixin link(name)
+            a(href=uri + '/' + name)= name
+
+        div(id='page')
+
+            h2(id='name') #{name}
+
+            canvas(id='canvas')
+
+            div(id='menu')
+                div(id='menu-header')
+                    ul
+                        if localExamples
+                            li
+                                a(href='/lo') local
+
+                        if dbExamples
+                            li
+                                a(href='/db') db
+
+                div(id='list')
+                    ul
+                        each name in list
+                            li
+                                +link(name)
+
         script !{code}
-        script
-            include ../../examples/gls01.js
+        script const data = !{data}
         script
             include ../public/widget.js

@@ -1,6 +1,23 @@
-#canvas01 {
+
+#page{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#canvas {
     display: block;
     width: 600px;
-    hight: 300px;
+    height: 300px;
     margin: 0 auto;
+    float: left;
+}
+
+#name {
+    padding-left: 10px;
+}
+
+#menu {
+    float: left;
+    max-width: 100%;
+    min-width: 200px;
 }

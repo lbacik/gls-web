@@ -6,7 +6,7 @@ function animate() {
 
 window.onload = () => {
 
-    const canvas = document.getElementById("canvas01")
+    const canvas = document.getElementById('canvas')
     const drawer = new Drawer(canvas)
 
     gls = new Gls(data, drawer)
