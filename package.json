@@ -1,6 +1,6 @@
 {
   "name": "gls-web",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Łukasz Bacik <mail@luka.sh> (http://luka.sh)",
   "license": "LGPL-2.1-or-later",
   "main": "app.js",
