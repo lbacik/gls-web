@@ -1,4 +1,6 @@
 
+const GlsWeb = require('./gls/gls-web')
+
 module.exports = (app, glsWeb) => {
 
     const LOCAL_URI = '/lo'
@@ -10,7 +12,7 @@ module.exports = (app, glsWeb) => {
 
     app.get('/code-generator', (req, res) => {
         res.render('data', {
-            data: glsWeb.code()
+            data: GlsWeb.code()
         })
         res.end()
     })
