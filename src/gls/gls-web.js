@@ -1,8 +1,6 @@
 
 const path = require('path')
-const Factory = require('@lbacik/gls')
-const factory = new Factory()
-const Generator = factory.codeGenerator()
+const GlsFactory = require('@lbacik/gls')
 const ProviderFactory = require('./Provider/factory')
 
 class GlsWeb {
@@ -83,7 +81,7 @@ class GlsWeb {
     }
 
     static code() {
-        return Generator.code()
+        return GlsFactory.codeGenerator().code()
     }
 }
 

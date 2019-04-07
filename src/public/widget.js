@@ -7,8 +7,10 @@ function animate() {
 window.onload = () => {
 
     const canvas = document.getElementById('canvas')
-    const drawer = new Drawer(canvas)
 
+    // TODO GlsFactory: gls = GlsFactory.gls(data, canvas)
+    const drawer = new CanvasDrawer(canvas)
     gls = new Gls(data, drawer)
+
     window.requestAnimationFrame(animate)
 }
