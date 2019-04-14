@@ -1,7 +1,7 @@
 
 const LocalProvider = require('./local-provider')
 const DbProvider = require('./db-provider')
-const GlsApiClient = require('@lbacik/gls-api-client')
+const GlsApiClient = require('@lbacik/gls-db-api-client')
 
 class Factory {
     static local(path) {
