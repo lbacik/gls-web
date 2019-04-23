@@ -1,5 +1,5 @@
 head
-    title canvas
+    title gls
     style
         include ../public/style.css
     body
@@ -29,6 +29,10 @@ head
                         each name in list
                             li
                                 +link(name)
+
+            div(id='footer')
+                p
+                    a(href='https://github.com/lbacik/gls-web') gls project
 
         script !{code}
         script const data = !{data}
