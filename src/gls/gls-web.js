@@ -8,6 +8,9 @@ class GlsWeb {
     constructor(localPath, dbUrl) {
         this.localProvider = ProviderFactory.local(localPath)
         this.dbProvider = ProviderFactory.db(dbUrl)
+        if (!dbUrl) {
+            this.dbProvider.enable = false
+        }
     }
 
     local(name) {
