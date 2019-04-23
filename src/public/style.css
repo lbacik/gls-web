@@ -1,4 +1,21 @@
 
+body {
+    font-family: Monospace;
+}
+
+a {
+    color: green;
+    text-decoration-line: none;
+}
+
+h2 {
+    margin: 0;
+}
+
+#menu #menu-header ul {
+    list-style-type: square;
+}
+
 #page{
     max-width: 800px;
     margin: 0 auto;
@@ -13,11 +30,47 @@
 }
 
 #name {
-    padding-left: 10px;
+    padding: 20px 20px;
+    padding-left: 30px;
+    background-color: aliceblue;
+    color: lightskyblue;
 }
 
 #menu {
     float: left;
     max-width: 100%;
     min-width: 200px;
+    background-color: aliceblue;
 }
+
+#menu #menu-header {
+    font-weight: bolder;
+    display: inline-block;
+    width: 100%;
+}
+
+#menu #menu-header a {
+    color: deepskyblue;
+}
+
+#menu #menu-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 10px;
+    padding-right: 20px;
+    float: right;
+}
+
+#menu #menu-header ul li {
+    padding-left: 10px;
+    float: left;
+}
+
+#footer {
+    clear: both;
+    display: block;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+
