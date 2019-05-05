@@ -32,8 +32,13 @@ The docker image can be build localy:
 
     $ docker build -t gls-web:local .
     
-or it can be pulled from dockerhub (https://hub.docker.com/r/lbacik/gls-web):
+or it can be pulled from dockerhub (https://hub.docker.com/r/lbacik/gls-web).
 
-    $ docker pull lbacik/gls-web
+To run it locally you can use the command like:
 
+    $ docker run --rm -p 3000:3000 lbacik/gls-web
+
+Or, to also connect to some DB through [gls-db-api](https://github.com/lbacik/gls-db-api) service: 
+
+    $ docker run --rm -p 3000:3000 -e GLS_API_URL=https://gls-db-api.herokuapp.com lbacik/gls-web
 
