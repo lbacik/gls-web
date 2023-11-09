@@ -11,6 +11,7 @@
   "dependencies": {
     "@lbacik/gls": "^0.2.0",
     "axios": "^1.6.1",
+    "dotenv": "^16.3.1",
     "express": "^4.16.4",
     "pug": "^2.0.3"
   },
