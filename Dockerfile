@@ -1,4 +1,4 @@
-FROM node:11-alpine
+FROM node:20
 
 RUN mkdir /project
 COPY . /project
@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 3000
 
-CMD node app.js
+CMD ["node", "app.js"]

@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 const path = require('path')
 const express = require('express')
@@ -8,7 +9,7 @@ const app = express()
 
 const port = process.env.PORT || 3000
 const LOCAL_EXAMPLES = process.env.LOCAL_EXAMPLES || path.resolve('./examples/')
-const GLS_API_URL = process.env.GLS_API_URL
+const GLS_API_URL = process.env.GLS_API_URL || 'https://jsonhub.cloud'
 
 const glsWeb = new GlsWeb(LOCAL_EXAMPLES, GLS_API_URL)
 
