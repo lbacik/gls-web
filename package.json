@@ -9,8 +9,8 @@
   },
   "main": "app.js",
   "dependencies": {
-    "@lbacik/gls": "^0.1.3",
-    "@lbacik/gls-db-api-client": "^0.0.5",
+    "@lbacik/gls": "^0.2.0",
+    "axios": "^1.6.1",
     "express": "^4.16.4",
     "pug": "^2.0.3"
   },
